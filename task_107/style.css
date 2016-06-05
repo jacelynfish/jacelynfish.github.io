@@ -441,6 +441,7 @@ header .nav .login{
 .join-desc{
 	font-size: 12px;
 	color: #787476;
+	line-height: 20px;
 }
 .join-protocal ul li a{
 	float: right;
@@ -493,12 +494,14 @@ padding: 50px calc(50% - 480px);
 	color: #787476;
 	border: none;
 	padding-left: 5px;
-	margin-right: 10px;
 	margin: 20px 0;
 }
 .contact-us form input.sub{
 	width: 100px;
-	background-color: white;
+	height: 40px;
+	padding: 0;
+	background-color: black;
+	margin-left: -5px;
 }
 .social-media{
 	margin: 15px 0 50px 0;
@@ -521,4 +524,7 @@ footer{
 	font-size: 12px;
 	padding: 20px;
 	text-align: center;
+}
+input.submit{
+	width: 525px;
 }
