@@ -473,6 +473,7 @@ header .nav .login{
 	background-color: #ededed;
 	color: #787476;
 	margin-bottom: 10px;
+	resize:none;
 }
 .contact-us{
 margin-top: 20px;
