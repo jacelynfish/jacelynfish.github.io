@@ -53,7 +53,10 @@ table {
 body{
 	font-family: "微软雅黑",Arial,sans-serif;
 	min-width: 1000px;
-	width: 1279px;
+	
+}
+div.wholewrap{
+	margin: 0 auto;
 }
 header{
 	height:60px;
@@ -96,7 +99,7 @@ header .nav .login{
 	background:url("img/banner_img.jpg") no-repeat;
 	height: 690px;
 	margin-top: 5px;
-	
+	background-size: cover;
 }
 #home div{
 	width: 60%;
@@ -119,6 +122,15 @@ header .nav .login{
 	position: absolute;
 	bottom:50px;
 	margin-left: 100px;
+	border: 1px solid #e34e52;
+	-moz-transition: background-color 1s, border 1s;
+	-webkit-transition: background-color 1s, border 1s;
+	transition: background-color 1s, border 1s;
+}
+#home a:hover{
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	box-sizing: content-box;
 }
 #home-list{
 	margin: 0 auto;
@@ -166,6 +178,7 @@ header .nav .login{
 #activity .search-activity{
 	background: url("img/search_bac.jpg") no-repeat;
 	height: 341px;
+	background-size: cover;
 	padding: 0 calc(50% - 420px);
 	color: white;
 	text-align: center;
@@ -192,6 +205,13 @@ header .nav .login{
 	height: 36px;
 	color:#787476;
 	position: relative;
+	padding-left: 10px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background-image: url("img/btnb.png");
+	background-repeat: no-repeat;
+	background-position:right 10px center;
 }
 .select-group select:hover{
 	border:1px solid #e34e52;
@@ -206,15 +226,7 @@ header .nav .login{
 	color: white;
 	background-image: url("img/selected.png");
 }
-.select-group:after{
-	content: '';
-  width:20px;
-  height:20px;
-  display: block;
-  background: url("img/btnb.png");
-  background-size: cover;
-  transform:translate(155px, -28px);
-}
+
 #activity .search-activity form input{
 	background-color: #e34e52;
 	width: 180px;
@@ -223,6 +235,15 @@ header .nav .login{
 	text-align: center;
 	border-style: none;
 	font-family: "微软雅黑",Arial,sans-serif;
+	-moz-transition: background-color 1s, border 1s;
+	-webkit-transition: background-color 1s, border 1s;
+	transition: background-color 1s, border 1s;
+}
+#activity .search-activity form input:hover{
+	
+	background-color: transparent;
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
 }
 #proj{
 	background-color: #ededed;
@@ -323,6 +344,15 @@ header .nav .login{
 	color: #e34e52;
 	border:1px solid #e34e52;
 	margin: 20px auto;
+	-moz-transition: background-color 1s, border 1s, color 1s;
+	-webkit-transition: background-color 1s, border 1s, color 1s;
+	transition: background-color 1s, border 1s, color 1s;
+}
+.about-new-right a:hover{
+	background-color: #787476;
+	color: white;
+	border: 1px solid #787476;
+	box-model:border-box;
 }
 .about-new-right span.scroll{
 	display: inline-block;
@@ -367,6 +397,16 @@ header .nav .login{
 	font-size: 20px;
 	background-color: transparent;
 	border: 1px solid white;
+	
+	-moz-transition: background-color 1s, border 1s, color 1s;
+	-webkit-transition: background-color 1s, border 1s, color 1s;
+	transition: background-color 1s, border 1s, color 1s;
+}
+.about-us .us-1 a:hover{
+	background-color: white;
+	box-sizing:content-box;
+	color: #e34e52;
+	
 }
 .about-us .us-2 .about-wrap{
 	position: absolute;
@@ -392,6 +432,15 @@ header .nav .login{
 	font-size: 20px;
 	background-color: transparent;
 	border: 1px solid #e34e52;
+	-moz-transition: background-color 1s, border 1s, color 1s;
+	-webkit-transition: background-color 1s, border 1s, color 1s;
+	transition: background-color 1s, border 1s, color 1s;
+}
+.about-us .us-2 a:hover{
+	border:1px solid transparent;
+	background-color: #e34e52;
+	color: #ffffff;
+	box-sizing:content-box;
 }
 .us-3{
 	background: url("img/info2_bac.jpg");
@@ -526,6 +575,25 @@ footer{
 	padding: 20px;
 	text-align: center;
 }
+footer a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	margin-top: 10px;
+	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
+}
+footer a:hover{
+	color: #32353e;
+}
+a:focus{
+	outline: none;
+}
 input.submit{
 	width: 525px;
+}
+input:focus, textarea:focus{
+	outline:1px solid #ededed;
+	background-color: white;
 }
