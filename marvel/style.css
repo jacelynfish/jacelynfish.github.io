@@ -61,6 +61,75 @@ table {
 	background: url('img/background.gif');
 	overflow: hidden;
 }
+header{
+	background-color: #212121;
+	color: #858585;
+	font-family: knockout;
+	max-width: 900px;
+	padding: 10px calc(50% - 450px) 0 calc(50% - 450px);
+}
+.social .social-left{
+width: 50%;
+	float: left;
+}
+.social .social-right{
+width: 50%;
+	float: right;
+}
+.social-left span{
+	line-height: 24px;
+	vertical-align: top;
+}
+.social-left ul{
+	display: inline;
+	vertical-align: text-bottom;
+}
+.social-right ul li{
+	float: right;
+	padding: 0 10px;
+	text-align: right;
+}
+.social-left ul li{
+	display: inline-block;
+	margin: 0 10px;
+
+}
+.social-left #social1{
+	background: url('img/media.png');
+	background-position: 0 0;
+    transform: scale(0.6);
+    width: 34px;
+    height: 24px;
+}
+.social-left #social2{
+	background: url('img/media.png');
+	background-position: 62px 0;
+    transform: scale(0.6);
+    width: 31px;
+    height: 24px;
+}
+.social-left #social3{
+background: url('img/media.png');
+	background-position: 32px 0;
+    transform: scale(0.6);
+    width: 34px;
+    height: 24px;
+}
+header img{
+	margin-top: 8px;
+	line-height: 43px;
+	vertical-align: bottom;
+}
+header ul.nav{
+
+	display: inline-block;
+	vertical-align: center;
+}
+header ul.nav li{
+line-height: 43px;
+	display: inline-block;
+	padding: 0 20px;
+}
 .content{
 	width: 100%;
 
