@@ -50,7 +50,13 @@ table {
 	font-family:knockout;
 	src:url('Knockout-HTF51-Middleweight.otf');
 }
-
+.clear-fix:after{
+	content:'.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
 .wrap{
 	background: url('img/background.gif');
 	overflow: hidden;
@@ -60,15 +66,39 @@ table {
 
 }
 .module{
-	
+	position: relative;
 	background-color: white;
 	margin: 10px 0;
 	box-shadow: 0px 2px 3px 0px grey;
 	font-family: knockout, "微软雅黑", Helvetica, sans-serif;
 }
+#moremovies{
+	background-color:#212121;
+}
+#moremovies .module-caption,#moremovies .module-title{
+	color: white;
+}
+#moremovies .module-title:before{
+	background-color: white;
+}
+.module-allmovies{
+	font-size: 18px;
+	color: white;
+	display: block;
+	position: absolute;
+	right: calc(50% - 450px);
+	top:20px;
+	text-decoration: none;
+	vertical-align: text-bottom;
+}
+.module-allmovies:after{
+	content:" »";
+	color: rgb(240,20,30);
+}
 .module-grid{
 	max-width: 900px;
 	padding: 10px calc(50% - 450px);
+
 }
 .module-title{
 	font-size: 30px;
@@ -92,6 +122,10 @@ table {
 	overflow: hidden;
 	vertical-align: top;
 }
+.module-coming, .module-movdate{
+	font-size: 13px;
+	color: #858585;
+}
 .module-pic{
 	display: block;
 	height: 200px;
@@ -112,11 +146,13 @@ table {
 	display: block;
 	font-size: 18px;
 	line-height: 1.2em;
-	margin: .3em 0 .2em;
+	margin: .2em 0 .2em;
 	color: black;
 	text-decoration: none;
 }
-
+.module-content img{
+	margin-bottom: 10px;
+}
 #cv1 .module-pic{
 	background:url('img/cv_1.jpg') no-repeat;
 }
