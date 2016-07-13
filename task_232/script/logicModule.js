@@ -102,9 +102,9 @@ window.onload = function(){
     }
 
     EventUtil.addEvent(dataModule.addBtn,'click', addHandler);
-
+    var formFactory;
     function addHandler(event){
-        EventUtil.preventDefault(event);
+
         var dataTemplate = {
             type : $("#form-type-select"),
             label : $("#form-name"),
@@ -118,10 +118,36 @@ window.onload = function(){
         var dataFactory = new DataFactory(dataTemplate);
         dataFactory.dataSerialization();
         var data = dataFactory.getData();
-        var formFactory = new FormFactory(data, prePanel);
+        formFactory = new FormFactory(data, prePanel);
         formFactory.addForm();
-
+        EventUtil.preventDefault(event);
     }
+    var submitBtn = $('#form-submit');
+    EventUtil.addEvent(submitBtn,'click',function(event){
+
+        var allData = formFactory.getValidatedSet();
+
+        for(var data in allData){
+            
+            if(data.type != 'text' && data.type != 'textarea' && data.type != 'select' && data.must == true){
+                var someChecked = false;;
+                var options = $('#'+data.tid +' input');
+                [].forEach.call(options,function(item,idx,arr){
+                    if(someChecked){
+                        someChecked = true;
+                    }else{
+                        someChecked = item.checked;
+                    }
+                });
+                console.log(someChecked);
+                if(!someChecked){
+                    EventUtil.preventDefault(event);
+                    alert(data.label + '项为必选，请至少选择一项！');
+                }
+            }
+        }
+
+    })
 
     var precap = $('#pre-cap');
     var modify_input = $('#pre-cap-modify');
@@ -130,11 +156,15 @@ window.onload = function(){
 
             precap.style.display = 'none';
             modify_input.style.display = 'block';
+        modify_input.focus();
 
     });
-    EventUtil.addEvent(modify_input,'change',function(event){
+    EventUtil.addEvent(modify_input,'blur',function(event){
         var value = EventUtil.getTarget(event).value;
-        precap.innerHTML = value;
+        if(value!=''){
+            precap.innerHTML = value;
+        }
+
         precap.style.display = 'block';
         modify_input.style.display = 'none';
 
