@@ -126,20 +126,56 @@ body{
 .form-control{
 	width: 100%;
 	margin-top:20px;
+	font-family: '微软雅黑',Helvetica, Arial, sans-serif;
+
 }
 .formCtr-label{
 	display: inline-block;
-	width: 35%;
+	width: 31%;
 	text-align: right;
+	color: #FF6666;
+
+
 }
 .formCtr-input{
 	display: inline-block;
+	margin-left: 20px;
+	font-family: '微软雅黑',Helvetica, Arial, sans-serif;
+
 
 }
+.formCtr-input[type='text']{
+	background-color: #FFCCCC;
+	color: white;
+	padding: 6px;
+	border-radius: 6px;
+	font-size: 0.8em;
+	border: none;
+	width: 20em;
+
+}
+.formCtr-input[type='text']:focus{
+	outline: none;
+}
+.formCtr-input label{
+	color: #FF6666;
+	margin-left: 10px;
+}
+
 textarea{
+	vertical-align: text-top;
 	resize: none;
-	width: 250px;
+	width: 300px;
 	height: 150px;
+	background-color: #FFCCCC;
+	color: white;
+	padding: 6px;
+	border-radius: 6px;
+	font-size: 0.8em;
+	border: none;
+}
+textarea:focus{
+	outline: none;
 }
 #pre-cap-modify{
 	background-color: #FFCCCC;

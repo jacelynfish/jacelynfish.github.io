@@ -130,11 +130,15 @@ window.onload = function(){
 
             precap.style.display = 'none';
             modify_input.style.display = 'block';
+        modify_input.focus();
 
     });
-    EventUtil.addEvent(modify_input,'change',function(event){
+    EventUtil.addEvent(modify_input,'blur',function(event){
         var value = EventUtil.getTarget(event).value;
-        precap.innerHTML = value;
+        if(value!=''){
+            precap.innerHTML = value;
+        }
+
         precap.style.display = 'block';
         modify_input.style.display = 'none';
 
