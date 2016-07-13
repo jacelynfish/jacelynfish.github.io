@@ -14,6 +14,7 @@ DataFactory.prototype = {
     constructor: DataFactory,
 
     dataSerialization : function(){
+        //先检测类型、标题和必填项是否设置好
         if(this.isBasicValidate()){
             this.dataModel.type = this.template.type.selectedOptions[0].value;
             this.dataModel.label = this.template.label.value;
@@ -23,6 +24,7 @@ DataFactory.prototype = {
             }else if(this.template.must.item(1).checked){
                 this.dataModel.must = false;
             }
+            //检测长度是否设置好
             if(this.dataModel.type == 'text' || this.dataModel.type == 'textarea'){
                 if(this.isTextVlidate()){
 
@@ -34,14 +36,14 @@ DataFactory.prototype = {
                     }
                     return this;
                 }else{
-                    // console.log('invalid');
+                    //如果没有设置好，在传给表单工厂的数据模型为null，表单工厂忽略不作出任何DOM改变
                     this.dataModel = null;
                     return;
                 }
 
             }
-            // console.log('try');
-
+            
+            //检测选项是否输入正确
             if(this.dataModel.type != 'text' && this.dataModel.type != 'textarea' && this.isOptionsValidate()){
                 this.dataModel.options = this.template.options;
                 return this;
@@ -59,7 +61,8 @@ DataFactory.prototype = {
     getData : function(){
         return this.dataModel;
     },
-
+    
+    //标题与必需项的检测
     isBasicValidate: function(){
         var labelValidated = false;
         var mustValidated = false;
@@ -80,7 +83,8 @@ DataFactory.prototype = {
         return (labelValidated && mustValidated);
 
     },
-
+    
+    //Input长度的检测
     isTextVlidate : function(){
         var minLenValidated = false, maxLenValidated = false;
         if(this.template.minLen.value == '' || isNaN(this.template.minLen.value) || this.template.maxLen.value== '' || isNaN(this.template.maxLen.value)){
@@ -94,6 +98,7 @@ DataFactory.prototype = {
         return (minLenValidated && maxLenValidated);
     },
 
+    //选项的检测
     isOptionsValidate : function(){
         var optionsValidated = false;
         if({}.toString.call(this.template.options) == '[object Array]' && this.template.options.length > 1){

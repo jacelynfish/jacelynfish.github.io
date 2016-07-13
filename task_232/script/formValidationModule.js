@@ -4,7 +4,7 @@ function FormValidation(){
 }
 FormValidation.prototype = {
     constructor : FormValidation,
-
+    //增加dataset的数据并为info区域添加基于text和textarea的检测事件
     addData : function(tid,data,container){
         this.dataset[tid] = data;
         this.dataset[tid].container = container;

@@ -1,3 +1,4 @@
+//表单工厂，将数据工厂传来的序列化数据转换为DOM并利用表单验证工厂的单例收集页面上存在的所有表单数据
 function FormFactory(serializedData,prePanel){
     this.data = serializedData;
     this.prePanel = prePanel;
@@ -122,6 +123,8 @@ FormFactory.prototype = {
         this.addToPanel(label, div,data);
     },
 
+    //在添加到DOM上前，添加删除键并添加删除事件
+    //将该表单数据添加到表单验证数据工厂单例中的总dataset中
     addToPanel :function(label, input,data){
         var delBtn = this.addDelBtn(label,label.getAttribute('for'));
         input.appendChild(delBtn);
@@ -156,12 +159,13 @@ FormFactory.prototype = {
         return label;
     },
 
-    createInput : function(){
+    createInput : function() {
         var div = document.createElement('div');
         div.classList.add('formCtr-input');
         return div;
-    }
-    ,
+    },
+    
+    //额外提示框的创建
     addInfo : function(data){
         var infoP = document.createElement('p');
         infoP.classList.add('addInfo');
@@ -183,8 +187,6 @@ FormFactory.prototype = {
         var delBtn = document.createElement('div');
         delBtn.innerHTML = '删除';
         delBtn.classList.add('delBtn');
-
-        
         return delBtn;
 
 
