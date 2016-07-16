@@ -46,10 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* 
-  created by jacelynfish
-*/
 @font-face{
 	font-family: 'mydongqing';
 	src : url('font/Hiragino Sans GB W3.otf');
@@ -66,7 +62,7 @@ body{
 	width: 100%;
 	
 }
-.demo{
+#demo{
 	background-color: white;
 	box-shadow: 0px 0px 50px 10px rgba(204,204,204,0.5);
 	margin: 10%; 
@@ -102,6 +98,7 @@ body{
 }
 .demo-img img{
 	width: 100%;
+
 }
 .demo-cap{
 	padding-left: 4%;
@@ -146,7 +143,7 @@ body{
 	text-align: left;
 	color: #FF6666;
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 .sellinfo-price{
 font-size: 1.2em;
@@ -178,6 +175,7 @@ font-size: 1.2em;
 	color: #FF6666;
 	text-align: center;
 	font-family: 'mydongqing', '微软雅黑', Helvetica, sans-serif;
+
 	border-radius: 30px;
 	margin: 0 10%;
 	padding: 8px;
@@ -186,8 +184,8 @@ font-size: 1.2em;
 
 }
 
-@media (max-width: 768px){
-	.demo{
+@media (max-width: 400px){
+	#demo{
 	width: auto;
 	display: block;
 	}
@@ -197,7 +195,7 @@ font-size: 1.2em;
 	#container{
 	padding: 20px;
 	}
-	.demo{
+	#demo{
 	width: 20%;
 	margin: 20px;
 	display: inline-block;
