@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发布行程</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<script src='script.js'></script>
+<body>
+<!-- <div id="loginInbox">
+			<form action="#" id="signInForm">
+				<input type="text" class="signInbox-item" name='signInName' placeholder='请输入登录名'>
+				<input type="password" class="signInbox-item" name='signInPw' placeholder='请输入登录密码'>
+				<input type="checkbox" name="remMe" id="rememberMe">
+				<label for="rememberMe">记住我的登录状态</label>
+				<input type="submit" value="登录" id="loginInBtn">
+				
+			</form>
+		</div> -->
+	<!-- <div id='header-mobile-util'>
+	
+	
+	
+	</div> -->
+	<header>
+		<div id="header-logo"></div>
+		<div id="header-logo-mobile"></div>
+		<ul id="header-nav">
+			<li class="header-nav-item"><a href="">首页</a></li>
+			<li class="header-nav-item"><a href="">发布行程</a></li>
+			<li class="header-nav-item"><a href="">随便逛逛</a></li>
+		</ul>
+		<ul id='header-nav-mobile' class='nav-none'>
+			<li class="header-nav-item-mobile"><a href="">首页</a></li>
+			<li class="header-nav-item-mobile"><a href="">发布行程</a></li>
+			<li class="header-nav-item-mobile"><a href="">随便逛逛</a></li>
+		</ul>
+		<div id="search-mobile" class='nav-none'>
+			<input type="text" id='search-mobile-input'>
+			<span id='search-mobile-btn'>搜索</span>
+		</div>
+		<div id="header-right">
+			<div id="header-search">
+			<input type="text" name='globalSrc' placeholder='搜索标签'>
+			<span id='header-search-btn'></span>
+		</div>
+		<div id="header-search-mobile"></div>
+		
+		<div id="header-signIn">登录&nbsp;&nbsp;|&nbsp;&nbsp;注册</div>
+		</div>
+
+	</header>
+	<div id="content-header">
+		<p>准备出发</p>
+	</div>
+	<div id="content">
+		<div id='content-headup'>请认真填写下列出行信息，以便小伙伴了解您的去向</div>
+		<div class="content-form-body">
+			<form action="" id="travelInfo">
+				<div class="ti-section" id='fromto'>
+					<div class="ti-cap">出发地/目的地</div>
+					<div class="ti-info">请填写出发/目的地及出发/到达日期</div>
+					<div class="ti-form">
+					<div class="ti-form-control">
+						<label for="ti-from" class="ti-form-label">出发地</label>
+						<input type="text" id="ti-from" name='from' class='ti-form-input'>
+						<label for="ti-fromTime" class="ti-form-label">出行日期</label>
+						<input type="text" id="ti-fromTime" class="ti-form-input" name='fromTime'>
+					</div>
+					<div class="ti-form-control">
+						<label for="ti-to" class="ti-form-label">目的地</label>
+						<input type="text" id="ti-to" name='to' class='ti-form-input'>
+						<label for="ti-toTime" class="ti-form-label">到达日期</label>
+						<input type="text" id="ti-toTime" class="ti-form-input" name='toTime'>
+					</div>	
+					</div>
+				</div>
+				<div class="ti-section">
+					<div class="ti-cap">交通信息</div>
+					<div class="ti-info">请认真填写出行交通工具信息</div>
+					<div class="ti-form">
+						<div class="ti-form-control">
+							<label class="ti-form-label">出发交通工具</label>
+							<select name="fromTrans">
+								<option value="plain">飞机</option>
+								<option value="bus">大巴</option>
+								<option value="boat">船</option>
+								<option value="others">其他</option>
+							</select>
+							<label for='ti-fromTransNo' class="ti-form-label">交通工具编号</label>
+							<input type="text" id='ti-fromTransNo' class="ti-form-input" name='fromTransNo'>
+						</div>
+						<div class="ti-form-control">
+							<label class="ti-form-label">返回交通工具</label>
+							<select name="toTrans">
+								<option value="plain">飞机</option>
+								<option value="bus">大巴</option>
+								<option value="boat">船</option>
+								<option value="others">其他</option>
+							</select>
+							<label for='ti-toTransNo' class="ti-form-label">交通工具编号</label>
+							<input type="text" id='ti-toTransNo' class="ti-form-input" name='toTransNo'>
+						</div>
+					</div>
+				</div>
+				<div class="ti-section">
+					<div class="ti-cap">购物种类</div>
+					<div class="ti-info">请在输入框内输入意向购买种类标签，回车添加标签；点击标签删除</div>
+					<div class="ti-form">
+						<input type="text" id='ti-tags' placeholder='如：化妆品、唇膏、衣服、包包、首饰等，标签名不超过5个字符，输入回车添加'>
+						<ul id="ti-tags-panel">
+							<li class="ti-tag-item">化妆瓶</li>
+							<li class="ti-tag-item">奶粉</li>
+							<li class="ti-tag-item">唇膏</li>
+							<li class="ti-tag-item">Dior</li>
+							<li class="ti-tag-item">图书</li>
+						</ul>
+					</div>
+				</div>
+				<div class="ti-section">
+					<div class="ti-cap">收款信息</div>
+					<div class="ti-info">请填写具体线上收款信息如支付宝账号及真实姓名</div>
+					<div class="ti-form">
+						<div class="ti-form-control">
+							<label for="zhifubao" class="ti-form-label">支付宝账号</label>
+							<input type="text" id="zhifubao" name='zfbAccount' class="ti-form-input">
+						
+						
+							<label for="realName" class="ti-form-label">真实姓名</label>
+							<input type="text" id="realName" name='zfbRealName' class="ti-form-input">
+						</div>
+					</div>
+				</div>
+				<div class="ti-section">
+					<div class="ti-cap">更多信息</div>
+					<div class="ti-info">请填写本次出行购物的备注信息</div>
+					<div class="ti-form">
+						<div class="ti-form-control">
+							<textarea name="moreInfo" id="ti-moreInfo">具体购物品牌：
+行李箱空间：
+购物计划：</textarea>
+						</div>
+						
+					</div>
+				</div>
+				<label id='readLabel'><input type="checkbox" name="readCheck" id="ti-readCheck" required>我已阅读<a href="#">《行程发布条款》</a></label>
+				<input type="submit" id='ti-formSubmit' value="提交">
+			</form>
+		</div>
+	</div>
+	<footer>
+		如果您对本网站有任何问题或建议<br>
+		欢迎提出<br>
+		<div id="sug">
+			<input type="text" id='footer-suggestion'>
+			
+		</div><span id='sug-btn'>提交</span>	
+
+		<ul id="about-us">
+			<li><a href="">关于我们</a></li>
+			<li><a href="">联系方式</a></li>
+			<li><a href="">合作意向</a></li>
+		</ul>
+
+		<p id='copy'>&copy; 2016 版权所有</p>
+		
+	</footer>
+</body>
+</html>
