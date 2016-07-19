@@ -55,7 +55,7 @@ table {
 	header
 */
 body{
-	min-width: 320px;
+	min-width: 100vw;
 }
 header{
 	padding: 10px 5%;
