@@ -162,10 +162,10 @@ header{
 	top: 70px;
 	left: 0;
 	padding: 6px 5%;
-	height: 2em;
 	background-color:white;
 	color: #99CC99;
 	font-weight: bold;
+	box-sizing:border-box;
 }
 #search-mobile-input{
 	outline: none;
