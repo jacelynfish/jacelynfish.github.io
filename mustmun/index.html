@@ -10,26 +10,8 @@
 </head>
 <body>
 	<div id="container">
+		<app></app>
 
-		<div id="routeringnav" class='clearfix'>
-			<span id="logo"></span>
-			<ul>
-				<li class="routeringnav-item"><a v-link="{path : '/'}">点名</a></li>
-				<li class="routeringnav-item"><a v-link="{path : '/mainSpeechList'}">主发言名单</a></li>
-				<li class="routeringnav-item"><a v-link="{path : '/motion'}">动议</a></li>
-				<li class="routeringnav-item"><a v-link="{path : '/documents'}">文件</a></li>
-			</ul>
-			<current-time></current-time>
-		</div>
-		<div id="util-bar">
-			<router-view></router-view>
-		</div>
-		
-		<div id="info">
-			<info-box></info-box>
-		</div>
-		
-		<div id="footer">Copyright &copy; 2013-2016 MUSTMUN. All Rights Reserved. Created by Jacelynfish</div>
 	</div>
 </body>
 </html>
