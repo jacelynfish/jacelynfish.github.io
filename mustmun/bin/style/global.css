@@ -1,7 +1,9 @@
 #container{
 	width: 100vw;
 }
+
 #routeringnav{
+	font-size: 16px;
 	line-height: 10vh;
 	box-sizing: border-box;
 	background-color: #3399FF;
@@ -57,7 +59,7 @@
 #info{
 	height: 80vh;
 	padding: 20px;
-	width: 69%;
+	width: 50%;
 	box-sizing:border-box;
 	display: inline-block;
 	vertical-align: top;
@@ -163,7 +165,10 @@
 	border-radius: 4px;
 	margin: 10px 6px 0 0;
 }
-
+#record{
+	display: inline-block;
+	width: 20%;
+}
 #footer{
 	width: 100%；
 	height:10vh;
