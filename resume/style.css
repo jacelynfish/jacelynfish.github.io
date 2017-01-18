@@ -175,19 +175,19 @@ a {
 .sidebar-contact-item {
   margin-left: 12px;
   color: white;
-  font-size: 0.825em;
+  font-size: 1em;
   line-height: 1.5; }
 
 .sidebar-des-item {
   margin-left: 12px;
   color: white;
-  font-size: 0.825em;
+  font-size: 1em;
   line-height: 1.5; }
 
 .sidebar-lang-item {
   margin-left: 12px;
   color: white;
-  font-size: 0.825em;
+  font-size: 1em;
   line-height: 1.5; }
 
 .sidebar-contact-item:nth-child(2) {
@@ -475,7 +475,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .edu-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
@@ -520,7 +520,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .intern-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
@@ -565,7 +565,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .com-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
@@ -610,7 +610,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .proj-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
@@ -655,7 +655,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .skill-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
@@ -700,7 +700,7 @@ a {
     background-color: rgba(238, 238, 238, 0.5);
     padding: 8px;
     margin: 4px 0;
-    font-size: 0.825em; }
+    font-size: 1em; }
     .demo-item-des li {
       margin-left: 16px;
       vertical-align: middle; }
