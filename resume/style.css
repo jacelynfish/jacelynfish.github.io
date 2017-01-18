@@ -1,19 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'sspro-reg';
-  src: url("../font/SourceSansPro-Regular.otf"); }
+  src: url("./font/SourceSansPro-Regular.otf"); }
 
 @font-face {
   font-family: 'sspro-light';
-  src: url("../font/SourceSansPro-Light.otf"); }
-
-@font-face {
-  font-family: 'hiro';
-  src: url("../font/Hiragino Sans GB W3.otf"); }
+  src: url("./font/SourceSansPro-Light.otf"); }
 
 @font-face {
   font-family: 'ko';
-  src: url("../font/Knockout-HTF49-Liteweight.otf"); }
+  src: url("./font/Knockout-HTF49-Liteweight.otf"); }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -67,7 +63,7 @@ a {
   color: inherit; }
 
 #container {
-  font-family: "hiro", "微软雅黑", helvetica, sans-serif;
+  font-family: "微软雅黑", helvetica, sans-serif;
   font-size: 14px;
   width: 100%;
   box-sizing: border-box;
@@ -144,7 +140,7 @@ a {
       vertical-align: middle; }
 
 #sidebar-icon #sidebar-avatar {
-  background-image: url("../images/avatar.jpg");
+  background-image: url("./images/avatar.jpg");
   background-repeat: no-repeat;
   background-size: 128px 128px;
   width: 128px;
@@ -204,7 +200,7 @@ a {
     content: '';
     width: 16px;
     height: 16px;
-    background-image: url("../icon/phone.png");
+    background-image: url("./icon/phone.png");
     background-size: 16px 16px;
     margin-right: 8px;
     margin-left: -24px;
@@ -222,7 +218,7 @@ a {
     content: '';
     width: 16px;
     height: 16px;
-    background-image: url("../icon/email.png");
+    background-image: url("./icon/email.png");
     background-size: 16px 16px;
     margin-right: 8px;
     margin-left: -24px;
@@ -240,7 +236,7 @@ a {
     content: '';
     width: 16px;
     height: 16px;
-    background-image: url("../icon/web.png");
+    background-image: url("./icon/web.png");
     background-size: 16px 16px;
     margin-right: 8px;
     margin-left: -24px;
@@ -329,7 +325,7 @@ a {
 .main-title {
   font-size: 1.4em;
   color: #555;
-  font-family: "hiro", "微软雅黑", helvetica, sans-serif;
+  font-family: "微软雅黑", helvetica, sans-serif;
   margin-left: 32px;
   font-weight: bold;
   display: inline-block;
@@ -364,7 +360,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/education.png");
+  background-image: url("./icon/education.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -380,7 +376,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/intern.png");
+  background-image: url("./icon/intern.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -396,7 +392,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/competition.png");
+  background-image: url("./icon/competition.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -412,7 +408,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/project.png");
+  background-image: url("./icon/project.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -428,7 +424,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/skills.png");
+  background-image: url("./icon/skills.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -444,7 +440,7 @@ a {
   margin-right: 8px;
   width: 24px;
   height: 24px;
-  background-image: url("../icon/demo.png");
+  background-image: url("./icon/demo.png");
   background-size: 16px 16px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -489,7 +485,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -534,7 +530,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -579,7 +575,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -624,7 +620,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -669,7 +665,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -714,7 +710,7 @@ a {
         margin-right: 4px;
         display: inline-block;
         content: '';
-        background: url("../icon/star.png") no-repeat;
+        background: url("./icon/star.png") no-repeat;
         background-size: 12px 12px;
         width: 12px;
         height: 12px; }
@@ -735,7 +731,7 @@ a {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: url("../icon/link.png") no-repeat;
+  background: url("./icon/link.png") no-repeat;
   vertical-align: middle;
   margin-left: 4px; }
 
