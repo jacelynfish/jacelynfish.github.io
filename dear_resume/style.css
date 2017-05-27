@@ -935,6 +935,9 @@
   overflow: hidden;
   text-align: center;
 }
+#welcome-header .md-toolbar {
+    z-index: 4;
+}
 #welcome-header.welcomeHeaderActive {
   transition: height 0.6s;
   position: relative;
